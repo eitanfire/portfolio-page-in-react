@@ -1,57 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    background: rgb(238, 174, 202);
-    background: radial-gradient(
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-image: url("app/img/vaporwave-aesthetic-background.jpg") */
+}
+
+body {
+  background-image: url("app/img/wp5004292-vaporwave-aesthetic-1920x1080-wallpapers.jpg")
+  /* background: rgb(18, 17, 19); */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-size: 20px; */
+  /*background: rgb(208, 178, 251);
+  /* background: radial-gradient(
       circle,
       rgba(238, 174, 202, 1) 0%,
       rgba(199, 233, 148, 1) 100%
-    );
+    ); */
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+  background: radial-gradient(circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(199, 233, 148, 1) 100%);
+}
+
+h2 {
+  inline-size: 75%;
+  overflow-wrap: break-word;
+  color: rgb(164, 176, 56);
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aeca;
+  background: radial-gradient(circle,
+      rgb(231, 235, 17) 0%,
+      rgb(65, 50, 60) 100%);
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
+  background: radial-gradient(circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(199, 233, 148, 1) 100%);
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  background-color: #39b9d2;
+  background: radial-gradient(circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(199, 233, 148, 1) 100%);
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
   }
-  
-  h1 {
-    text-align: center;
-    margin: 2rem 0 4rem 0;
-  }
-  
+
   .accordion {
-    max-width: 600px;
-    margin: 2rem auto;
+    width: 90%;
   }
-  
-  .accordion-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #21aeca;
-  }
-  
-  .accordion-title:hover {
-    background-color: #3ab4cc;
-  }
-  
-  .accordion-title,
-  .accordion-content {
-    padding: 1rem;
-  }
-  
-  .accordion-content {
-    background-color: #39b9d2;
-  }
-  
-  @media screen and (max-width: 700px) {
-    body {
-      font-size: 18px;
-    }
-  
-    .accordion {
-      width: 90%;
-    }
-  }
+}
+
+img {
+  width: 145px;
+  height: 100%;
+  border-radius: 25px;
+}
